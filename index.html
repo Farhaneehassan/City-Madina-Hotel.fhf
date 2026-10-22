@@ -188,4 +188,5 @@ function resetMenu(){if(!confirm("Reset the menu to the default menu? This remov
 function exportMenu(){const blob=new Blob([JSON.stringify(items,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="city-madina-menu-backup.json";a.click();URL.revokeObjectURL(a.href)}
 renderMenu();
 </script>
-</body></html>
+</body>
+</html>
